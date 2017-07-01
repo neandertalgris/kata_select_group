@@ -17,7 +17,7 @@ $ sudo apt-get install -y nodejs
 ```
 It may be important to update npm:
 ```
-$ npm install npm@2 -g
+$ npm install npm@3 -g
 ```
 
 ### For Tests
@@ -25,6 +25,7 @@ $ npm install npm@2 -g
 For running tests, we will use GRUNT (JS task runner) so we need to install it globally:
 ```
 $ sudo npm install -g grunt-cli
+$ sudo npm install -g karma-cli
 ```
 
 ### Dependencies
