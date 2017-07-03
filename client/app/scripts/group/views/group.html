@@ -1,5 +1,44 @@
-<h3>Group</h3>
-<br>
-<div>
-  <br><a href="#/" class="kataFont">Home</a>
+<div id="content">
+    <div id="input-data">
+        <hr>
+        <h3>Insert Pairs</h3>
+        </hr>
+        <label for="estocolmo_id">Estocolmo</label>
+        <input type="text" id="estocolmo_id" name="estocolmo_id" ng-model="data.pair.estocolmo_id">
+        <label for="londres_id">Londres</label>
+        <input type="text" id="londres_id" name="londres_id" ng-model="data.pair.londres_id">
+        <button ng-click="addPair()">Add</button>
+    </div>
+    <div id="data-viewer">
+        <hr>
+        <h3>Pairs</h3>
+        </hr>
+        <table>
+            <thead>
+            <tr>
+                <th>Estocolmo</th>
+                <th>Londres</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="pair in data.pairs">
+                <td>{{pair.estocolmo_id}}</td>
+                <td>{{pair.londres_id}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="data-results">
+        <hr>
+        <h3>Results</h3>
+        </hr>
+        <ul>
+            <li ng-repeat="item in data.going">
+                {{item}}
+            </li>
+        </ul>
+
+    </div>
 </div>
+<br><a href="#/" class="kataFont">Home</a>
+

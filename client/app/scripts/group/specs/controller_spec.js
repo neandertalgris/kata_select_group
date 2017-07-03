@@ -21,17 +21,17 @@ describe('Controller: select group', function () {
             expect(scope.sum_two_numbers(11, 22)).toEqual(33);
         });
         //KATA
-        it('testing function "select_list" in scope', function () {
+        iit('testing function "select_list" in scope', function () {
             expect(scope.select_list([
                 {
-                    estocolmo_id: 1009,
-                    londres_id: 2011
+                    estocolmo_id: 1000,
+                    londres_id: 2000
                 },
                 {
-                    estocolmo_id: 1017,
-                    londres_id: 2011
+                    estocolmo_id: 1001,
+                    londres_id: 2000
                 }
-            ])).toEqual([2011]);
+            ])).toEqual([2000]);
         });
 
         it('testing function "select_list" in scope', function () {
@@ -46,6 +46,7 @@ describe('Controller: select group', function () {
                 }
             ])).toEqual([2021]);
         });
+
         it('testing function "select_list" in scope', function () {
             expect(scope.select_list([
                 {
@@ -65,6 +66,61 @@ describe('Controller: select group', function () {
                     londres_id: 2002
                 }
             ])).toEqual([1009, 2002]);
+        });
+
+        iit('testing function "select_list" in scope', function () {
+            expect(scope.select_list([
+                {
+                    estocolmo_id: 1003,
+                    londres_id: 2002
+                },
+                {
+                    estocolmo_id: 1003,
+                    londres_id: 2003
+                },
+                {
+                    estocolmo_id: 1003,
+                    londres_id: 2007
+                },
+                {
+                    estocolmo_id: 1003,
+                    londres_id: 2053
+                },
+                {
+                    estocolmo_id: 1003,
+                    londres_id: 2054
+                }
+            ])).toEqual([1003]);
+        });
+
+        it('testing function "select_list" in scope', function () {
+            expect(scope.select_list([
+                {
+                    estocolmo_id: 1099,
+                    londres_id: 2099
+                },
+                {
+                    estocolmo_id: 1009,
+                    londres_id: 2002
+                },
+                {
+                    estocolmo_id: 1002,
+                    londres_id: 2002
+                }
+            ])).toEqual([2002, 2099]);
+        });
+
+        it('testing function "select_list" in scope', function () {
+            expect(scope.select_list([
+                {
+                    estocolmo_id: 1009,
+                    londres_id: 2012
+                },
+                {
+                    estocolmo_id: 1009,
+                    londres_id: 2012
+                }
+            ])).toEqual([2012]);
         });
     });
 
