@@ -1,4 +1,4 @@
-Kata Cuestionarix
+Kata TDD
 ===================
 
 General installation instructions:
